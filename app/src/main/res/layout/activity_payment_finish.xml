@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		android:background="@drawable/bg_firstpage"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:gravity="center"
+		tools:context=".module.payment.PaymentFinishActivity">
+
+	<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:fontFamily="@font/raleway_semibold"
+			android:textSize="@dimen/spacing_large"
+			android:layout_marginBottom="@dimen/spacing_normal"
+			android:text="Payment Successful"/>
+
+
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/success_payment"
+			android:layout_centerInParent="true"/>
+
+	<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:fontFamily="@font/raleway_regular"
+			android:textSize="@dimen/spacing_normal"
+			android:layout_marginTop="@dimen/spacing_normal"
+			android:text="IDR 174.000 has been added \nto your x-miles"/>
+
+
+	<Button
+			android:id="@+id/btn_finish_payment"
+			android:layout_marginTop="@dimen/spacing_larger"
+			android:textColor="@color/white"
+			android:background="@drawable/btn_signup_background"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Okay"/>
+</LinearLayout>

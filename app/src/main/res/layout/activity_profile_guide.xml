@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:chipcloud="http://schemas.android.com/tools"
+		android:id="@+id/parent_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/white">
+
+	<com.google.android.material.appbar.AppBarLayout
+			android:id="@+id/appbar_profile_guide"
+			android:layout_width="match_parent"
+			app:elevation="0dp"
+			android:elevation="0dp"
+			android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.Toolbar
+				android:id="@+id/toolbar_Profile_guide"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?attr/colorPrimary"
+				app:contentInsetStartWithNavigation="0dp"
+				android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+				app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical">
+
+				<TextView
+						android:layout_weight="1"
+						android:fontFamily="@font/raleway_semibold"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textStyle="bold"
+						android:textSize="@dimen/font_large"
+						android:text="Profile Guide"
+						android:textColor="@color/white"
+						/>
+
+			</LinearLayout>
+
+
+		</androidx.appcompat.widget.Toolbar>
+
+
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<RelativeLayout
+			android:clipToPadding="false"
+			android:background="@color/white_dark"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginBottom="@dimen/spacing_large"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+		<androidx.core.widget.NestedScrollView
+				android:id="@+id/scroll_profile"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:clipToPadding="false">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+				<RelativeLayout
+						android:id="@+id/fl_image_profile"
+						android:layout_width="match_parent"
+						android:layout_height="120dp">
+
+					<ImageView
+							android:layout_width="match_parent"
+							android:layout_height="80dp"
+							android:layout_marginStart="-120dp"
+							android:layout_marginEnd="-120dp"
+							android:background="@drawable/bg_main_curve"/>
+
+					<FrameLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerInParent="true">
+
+						<ImageView
+								android:id="@+id/iv_profile_guide_image"
+								android:layout_width="100dp"
+								android:layout_height="100dp"
+								/>
+
+						</FrameLayout>
+
+				</RelativeLayout>
+
+
+				<LinearLayout
+						android:paddingTop="@dimen/spacing_normal"
+						android:paddingBottom="@dimen/spacing_larger"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/account_circle" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="Full Name"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<TextView
+									android:id="@+id/ed_first_name_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_regular"
+									android:text="Adam Gibson"
+									android:textSize="@dimen/font_normal"
+									android:textColor="@color/grey_80" />
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_small"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/home_circle" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="City of Residence"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<TextView
+									android:id="@+id/ed_last_name_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_regular"
+									android:text="London"
+									android:textSize="@dimen/font_normal"
+									android:textColor="@color/grey_80" />
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_small"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/file_document_box_check" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="About"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<TextView
+									android:id="@+id/ed_email_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_regular"
+									android:text="@string/long_lorem_ipsum"
+									android:inputType="textMultiLine"
+									android:maxLines="7"
+									android:minLines="3"
+									android:textSize="@dimen/font_normal"
+									android:textColor="@color/grey_80" />
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_normal"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/translate" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="Language"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_regular"
+									android:text="Bahasa, English, Mandarin"
+									android:textSize="@dimen/font_normal"
+									android:textColor="@color/grey_80" />
+
+
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_normal"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/flag" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="Personal Interest"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_regular"
+									android:text="Photography, food, Adventure"
+									android:textSize="@dimen/font_normal"
+									android:textColor="@color/grey_80" />
+
+
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<View
+							android:layout_width="match_parent"
+							android:layout_height="0.5dp"
+							android:alpha="0.1"
+							android:layout_marginBottom="@dimen/spacing_normal"
+							android:layout_marginTop="@dimen/spacing_normal"
+							android:background="#000"/>
+
+
+					<RelativeLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent">
+
+						<TextView
+								android:paddingStart="@dimen/spacing_large"
+								android:layout_marginBottom="@dimen/spacing_small"
+								android:id="@+id/tv_itinerary_guide"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:fontFamily="@font/raleway_semibold"
+								android:text="Itinerary"
+								android:textSize="@dimen/font_normal"
+								android:textColor="@color/grey_80" />
+
+
+						<androidx.recyclerview.widget.RecyclerView
+								android:layout_width="match_parent"
+								android:id="@+id/rv_itinerary_guide_profile"
+								android:layout_below="@+id/tv_itinerary_guide"
+								android:layout_centerVertical="true"
+								android:layout_gravity="center_vertical"
+								android:layout_height="match_parent"/>
+
+					</RelativeLayout>
+
+
+					<View
+							android:layout_width="match_parent"
+							android:layout_height="0.5dp"
+							android:alpha="0.1"
+							android:layout_marginTop="@dimen/spacing_normal"
+							android:background="#000"/>
+
+					<LinearLayout
+							android:layout_margin="@dimen/spacing_normal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="vertical">
+
+						<TextView
+								android:fontFamily="@font/raleway_semibold"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:text="Review"
+								android:textSize="@dimen/font_normal"
+								android:textColor="@color/grey_80" />
+
+						<LinearLayout
+								android:layout_marginTop="@dimen/spacing_normal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="center_vertical"
+								android:orientation="horizontal">
+
+							<ImageView
+									android:layout_width="50dp"
+									android:layout_height="50dp"
+									android:tint="@color/color_icon"
+									android:src="@drawable/account_circle"/>
+
+							<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+								<LinearLayout
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:orientation="horizontal">
+
+									<TextView
+
+											android:fontFamily="@font/raleway_semibold"
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:text="heru"
+											android:layout_marginEnd="@dimen/spacing_small"
+											android:textSize="@dimen/font_small"
+											android:textStyle="bold"
+											/>
+
+									<androidx.appcompat.widget.AppCompatRatingBar
+											style="@style/Yellow.Small.AppCompatRatingBar"
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:numStars="5"
+											android:rating="3.5"
+											android:stepSize="0.5"
+											android:theme="@style/Yellow.Small.AppCompatRatingBar" />
+
+								</LinearLayout>
+
+
+
+								<TextView
+										android:fontFamily="@font/raleway_regular"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:textSize="@dimen/font_small"
+										android:textColor="@color/color_icon"
+										android:text="Quisque imperdiet nunc at massa dictum volutpat. Etiam id orci ipsum. Integer id ex dignissim"/>
+
+							</LinearLayout>
+
+
+
+						</LinearLayout>
+
+						<LinearLayout
+								android:layout_marginTop="@dimen/spacing_normal"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="center_vertical"
+								android:orientation="horizontal">
+
+							<ImageView
+									android:layout_width="50dp"
+									android:layout_height="50dp"
+									android:tint="@color/color_icon"
+									android:src="@drawable/account_circle"/>
+
+							<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:orientation="vertical">
+
+								<LinearLayout
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:orientation="horizontal">
+
+									<TextView
+											android:fontFamily="@font/raleway_semibold"
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:text="heru"
+											android:layout_marginEnd="@dimen/spacing_small"
+											android:textSize="@dimen/font_small"
+											android:textStyle="bold"
+											/>
+
+									<androidx.appcompat.widget.AppCompatRatingBar
+											style="@style/Yellow.Small.AppCompatRatingBar"
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:numStars="5"
+											android:rating="3.5"
+											android:stepSize="0.5"
+											android:theme="@style/Yellow.Small.AppCompatRatingBar" />
+
+								</LinearLayout>
+
+								<TextView
+										android:fontFamily="@font/raleway_regular"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:textSize="@dimen/font_small"
+										android:textColor="@color/color_icon"
+										android:text="Quisque imperdiet nunc at massa dictum volutpat. Etiam id orci ipsum. Integer id ex dignissim"/>
+
+							</LinearLayout>
+
+
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+		</androidx.core.widget.NestedScrollView>
+
+	</RelativeLayout>
+
+
+	<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Contact Guide"
+			android:textColor="@color/white"
+			android:layout_gravity="bottom"
+			android:background="@color/colorAccent"
+			android:fontFamily="@font/raleway_semibold"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

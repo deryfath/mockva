@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<RelativeLayout
+			android:id="@+id/rl_choose_booking_state"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			app:layout_collapseMode="pin"
+			android:layout_marginTop="@dimen/spacing_small"
+			android:layout_marginStart="@dimen/spacing_tiny"
+			android:layout_marginEnd="@dimen/spacing_tiny"
+			android:layout_marginBottom="@dimen/spacing_tiny"
+			>
+
+		<androidx.cardview.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:cardCornerRadius="2dp"
+				app:cardElevation="5dp"
+				android:elevation="5dp">
+
+			<TextView
+					android:gravity="center_vertical"
+					android:id="@+id/tv_choose_booking_state"
+					android:fontFamily="@font/raleway_regular"
+					android:textSize="@dimen/font_normal"
+					android:textColor="#3F5AA6"
+					android:text="Pending Booking"
+					style="@style/AppTheme.TextAppearance.EditText"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_centerInParent="true"
+					android:padding="@dimen/spacing_small"
+					android:drawableEnd="@drawable/ic_triangle_down"/>
+		</androidx.cardview.widget.CardView>
+
+	</RelativeLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/rv_booking"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			/>
+
+
+</LinearLayout>

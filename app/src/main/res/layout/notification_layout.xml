@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:tools="http://schemas.android.com/tools"
+				android:layout_width="40dp"
+				android:id="@+id/rl_notification_badge"
+				android:layout_height="40dp"
+				android:gravity="center_vertical"
+				android:background="@color/colorPrimary"
+		>
+
+	<ImageView
+			android:layout_width="40dp"
+			android:tint="@color/white"
+			android:src="@drawable/ic_notifications"
+			android:layout_height="30dp"/>
+
+	<ImageView
+			android:id="@+id/iv_badge_notification"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/badge_background"
+			android:gravity="center"
+			android:minWidth="12sp"
+			android:adjustViewBounds="true"
+			android:minHeight="12dp"
+			android:layout_marginEnd="@dimen/spacing_tiny"
+			android:layout_marginTop="5dp"
+			android:visibility="visible"
+			android:layout_gravity="center_horizontal"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentEnd="true"
+			/>
+
+</RelativeLayout>

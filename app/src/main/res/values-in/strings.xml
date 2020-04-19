@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">mockva</string>
+	<string name="welcome">Selamat Datang</string>
+	<string name="plan_yor">Rencanakan liburanmu dengan mudah</string>
+	<string name="explore_the">Jelajahi dunia dengan cara autentik</string>
+	<string name="get_started">Mulai Sekarang</string>
+	<string name="already_have_account">Sudah Punya Akun Xplorian?</string>
+	<string name="by_using_xplorian">Dengan menggunakan Xploriant, Anda Setuju</string>
+	<string name="term_policy"><u>Syarat dan Ketentuan</u></string>
+	<string name="sign_up">Daftar</string>
+	<string name="login">Masuk</string>
+	<string name="forgot_password">Lupa password?</string>
+	<string name="dont_have">Tidak punya akun xlporian? <b><u>DAFTAR</u></b></string>
+	<string name="sign_up_underline"><u>DAFTAR</u></string>
+	<string name="login_underline"><u>MASUK</u></string>
+	<string name="email_address">Email</string>
+	<string name="password">Password</string>
+	<string name="login_google">Masuk dengan Google</string>
+	<string name="reset_password">Ubah Password</string>
+	<string name="submit">Submit</string>
+	<string name="enter_the_email">Masukan alamat email anda yang terhubung dengan akun Xploriant, dan selanjutnya akan dikirimkan link untuk ubah password via email anda</string>
+	<string name="cancel">Batal</string>
+	<string name="first_name">Nama depan</string>
+	<string name="last_name">Nama belakang</string>
+	<string name="confirm_password">Konfirmasi Password</string>
+	<string name="next">Selanjutnya</string>
+	<string name="gender">Jenis kelamin</string>
+	<string name="nationality">Kebangsaan</string>
+	<string name="city_residence">Kota Asal</string>
+	<string name="birth_date">Tanggal Lahir</string>
+	<string name="birthday_warn">*Anda harus mendaftar minimal dengan usia 17 tahun. Data tanggal lahir akan menjadi hak privasi pengguna</string>
+	<string name="personal_identification">No. KTP</string>
+	<string name="personal_iden_warn">*Masukan nomor KTP anda. Informasi ini merupakan hak privasi pengguna.</string>
+
+	<string-array name="gender">
+		<item>Laki-laki</item>
+		<item>Perempuan</item>
+	</string-array>
+
+	<string-array name="month_array">
+		<item>Januari</item>
+		<item>Februari</item>
+		<item>Maret</item>
+		<item>April</item>
+		<item>Mei</item>
+		<item>Juni</item>
+		<item>Juli</item>
+		<item>Agustus</item>
+		<item>September</item>
+		<item>Oktober</item>
+		<item>November</item>
+		<item>Desember</item>
+	</string-array>
+
+	<string name="what_your_personal_interest">Kamu tertarik dalam hal apa?</string>
+	<string name="start_packing">Mulai kemasi barangmu</string>
+	<string name="you_are_good_to">Bersiaplah untuk pergi</string>
+	<string name="done">Selesai</string>
+	<string name="home">Home</string>
+	<string name="booking">Booking</string>
+	<string name="message">Pesan</string>
+	<string name="account">Akun</string>
+	<string name="my_booking">My Booking</string>
+	<string name="travelers_booking">Travelers Booking</string>
+	<string name="pending_booking">Pending Booking</string>
+	<string name="accepted_booking">Booking Diterima</string>
+	<string name="rejected_booking">Booking Ditolak</string>
+	<string name="paid_booking">Booking Dibayar</string>
+	<string name="finished_booking">Booking Selesai</string>
+	<string name="canceled_booking">Booking Dibatalkan</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_circle"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/navigation_booking"
+        android:icon="@drawable/message_text"
+        android:title="Transfer" />
+
+    <item
+            android:id="@+id/navigation_message"
+            android:icon="@drawable/briefcase_clock"
+            android:title="History" />
+
+    <item
+            android:id="@+id/navigation_account"
+            android:icon="@drawable/account_box"
+            android:title="@string/account" />
+
+</menu>

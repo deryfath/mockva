@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		android:background="@drawable/bg_firstpage"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".module.itinerary.ItineraryRequestFinishActivity">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_centerInParent="true">
+
+		<TextView
+				android:fontFamily="@font/raleway_semibold"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Your booking request \n has been sent"
+				android:gravity="center"
+				android:textSize="@dimen/font_larger"
+				android:textStyle="bold"/>
+
+		<ImageView
+				android:layout_marginTop="50dp"
+				android:layout_marginBottom="50dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:src="@drawable/globe_finish"/>
+
+		<TextView
+				android:fontFamily="@font/raleway_regular"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Waiting for Guide's Confirmation"
+				android:gravity="center"
+				android:textSize="@dimen/font_large"/>
+
+
+
+		<Button
+				style="@style/AppTheme.Widget.Button"
+				android:id="@+id/btn_finish_request_booking"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="100dp"
+				android:layout_marginTop="50dp"
+				android:text="Okay"
+				android:textSize="@dimen/spacing_normal"
+				android:textAllCaps="false"
+				android:textColor="@color/white"
+				android:background="@drawable/btn_signup_background"
+				android:layout_marginEnd="100dp"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

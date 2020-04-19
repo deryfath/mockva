@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		 xmlns:app="http://schemas.android.com/apk/res-auto"
+		 xmlns:tools="http://schemas.android.com/tools"
+		 android:id="@+id/bottomSheetMain"
+		 android:layout_width="match_parent"
+		 android:layout_height="wrap_content"
+		 android:padding="@dimen/radius_large"
+		 app:behavior_hideable="true"
+		 app:behavior_peekHeight="0dp"
+		 android:clickable="true"
+		 android:focusable="true"
+		android:orientation="vertical"
+		android:layout_gravity="bottom"
+		 app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/layout_strip"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			>
+
+		<View
+				android:id="@+id/view_strip_first"
+				android:layout_width="47dp"
+				android:layout_height="3dp"
+				android:background="@drawable/line_grey"
+				app:layout_constraintTop_toTopOf="parent"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				/>
+
+		<View
+				android:id="@+id/view_strip_second"
+				android:layout_width="47dp"
+				android:layout_height="3dp"
+				android:layout_marginTop="@dimen/spacing_small"
+				android:layout_marginBottom="@dimen/spacing_small"
+				app:layout_constraintTop_toBottomOf="@+id/view_strip_first"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				android:background="@drawable/line_grey" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+	<LinearLayout
+			android:id="@+id/layout_mybooking"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_constraintTop_toBottomOf="@+id/layout_strip"
+			android:layout_marginTop="@dimen/spacing_normal"
+			android:orientation="vertical">
+
+
+		<TextView
+				android:id="@+id/tv_pending_booking"
+				android:padding="@dimen/spacing_normal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/raleway_regular"
+				android:text="Pending Booking"
+				android:textSize="@dimen/font_large" />
+
+		<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:layout_marginLeft="@dimen/spacing_normal"
+				android:layout_marginRight="@dimen/spacing_normal"
+				android:background="#727c8e"
+				android:alpha="0.1"/>
+
+		<TextView
+				android:id="@+id/tv_accepted_booking"
+				android:padding="@dimen/spacing_normal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/raleway_regular"
+				android:text="Accepted Booking"
+				android:textSize="@dimen/font_large"/>
+
+		<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:layout_marginLeft="@dimen/spacing_normal"
+				android:layout_marginRight="@dimen/spacing_normal"
+				android:background="#727c8e"
+				android:alpha="0.1"/>
+
+		<TextView
+				android:id="@+id/tv_rejected_booking"
+				android:padding="@dimen/spacing_normal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/raleway_regular"
+				android:text="Rejected Booking"
+				android:textSize="@dimen/font_large" />
+
+		<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:layout_marginLeft="@dimen/spacing_normal"
+				android:layout_marginRight="@dimen/spacing_normal"
+				android:background="#727c8e"
+				android:alpha="0.1"/>
+
+		<TextView
+				android:id="@+id/tv_paid_booking"
+				android:padding="@dimen/spacing_normal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/raleway_regular"
+				android:text="Paid Booking"
+				android:textSize="@dimen/font_large" />
+
+		<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:layout_marginLeft="@dimen/spacing_normal"
+				android:layout_marginRight="@dimen/spacing_normal"
+				android:background="#727c8e"
+				android:alpha="0.1"/>
+
+		<TextView
+				android:id="@+id/tv_finished_booking"
+				android:padding="@dimen/spacing_normal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/raleway_regular"
+				android:text="Finished Booking"
+				android:textSize="@dimen/font_large" />
+
+		<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:layout_marginLeft="@dimen/spacing_normal"
+				android:layout_marginRight="@dimen/spacing_normal"
+				android:background="#727c8e"
+				android:alpha="0.1"/>
+
+		<TextView
+				android:id="@+id/tv_canceled_booking"
+				android:padding="@dimen/spacing_normal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/raleway_regular"
+				android:text="Canceled Booking"
+				android:textSize="@dimen/font_large" />
+
+		<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:layout_marginLeft="@dimen/spacing_normal"
+				android:layout_marginRight="@dimen/spacing_normal"
+				android:background="#727c8e"
+				android:alpha="0.1"/>
+
+	</LinearLayout>
+
+
+	<LinearLayout
+			android:visibility="gone"
+			android:id="@+id/layout_traveler_booking"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_constraintTop_toBottomOf="@+id/layout_strip"
+			android:layout_marginTop="@dimen/spacing_normal"
+			android:orientation="vertical">
+
+
+		<TextView
+				android:id="@+id/tv_pending_traveler_booking"
+				android:padding="@dimen/spacing_normal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/raleway_regular"
+				android:text="Pending Booking"
+				android:textSize="@dimen/font_large" />
+
+		<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:layout_marginLeft="@dimen/spacing_normal"
+				android:layout_marginRight="@dimen/spacing_normal"
+				android:background="#727c8e"
+				android:alpha="0.1"/>
+
+		<TextView
+				android:id="@+id/tv_accepted_traveler_booking"
+				android:padding="@dimen/spacing_normal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/raleway_regular"
+				android:text="Accepted Booking"
+				android:textSize="@dimen/font_large"/>
+
+		<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:layout_marginLeft="@dimen/spacing_normal"
+				android:layout_marginRight="@dimen/spacing_normal"
+				android:background="#727c8e"
+				android:alpha="0.1"/>
+
+		<TextView
+				android:id="@+id/tv_rejected_traveler_booking"
+				android:padding="@dimen/spacing_normal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/raleway_regular"
+				android:text="Rejected Booking"
+				android:textSize="@dimen/font_large" />
+
+		<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:layout_marginLeft="@dimen/spacing_normal"
+				android:layout_marginRight="@dimen/spacing_normal"
+				android:background="#727c8e"
+				android:alpha="0.1"/>
+
+
+		<TextView
+				android:id="@+id/tv_finished_traveler_booking"
+				android:padding="@dimen/spacing_normal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/raleway_regular"
+				android:text="Finished Booking"
+				android:textSize="@dimen/font_large" />
+
+		<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:layout_marginLeft="@dimen/spacing_normal"
+				android:layout_marginRight="@dimen/spacing_normal"
+				android:background="#727c8e"
+				android:alpha="0.1"/>
+
+
+
+	</LinearLayout>
+
+</LinearLayout>

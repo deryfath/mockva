@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:chipcloud="http://schemas.android.com/tools"
+		android:id="@+id/parent_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/white">
+
+	<com.google.android.material.appbar.AppBarLayout
+			android:id="@+id/appbar_profile"
+			android:layout_width="match_parent"
+			app:elevation="0dp"
+			android:elevation="0dp"
+			android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.Toolbar
+				android:id="@+id/toolbar_Profile"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?attr/colorPrimary"
+				app:contentInsetStartWithNavigation="0dp"
+				android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+				app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical">
+
+					<TextView
+							android:layout_weight="1"
+							android:fontFamily="@font/raleway_semibold"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textStyle="bold"
+							android:textSize="@dimen/font_large"
+							android:text="Profile"
+							android:textColor="@color/white"
+							/>
+
+					<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginEnd="@dimen/spacing_large"
+							android:text="Update"
+							android:fontFamily="@font/raleway_semibold"
+							android:drawableLeft="@drawable/marker_check"
+							android:textColor="@color/white"/>
+
+			</LinearLayout>
+
+
+		</androidx.appcompat.widget.Toolbar>
+
+
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<RelativeLayout
+			android:clipToPadding="false"
+			android:background="@color/white_dark"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+		<androidx.core.widget.NestedScrollView
+				android:id="@+id/scroll_profile"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:clipToPadding="false">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+				<RelativeLayout
+						android:id="@+id/fl_image_profile"
+						android:layout_width="match_parent"
+						android:layout_height="120dp">
+
+					<ImageView
+							android:layout_width="match_parent"
+							android:layout_height="80dp"
+							android:layout_marginStart="-120dp"
+							android:layout_marginEnd="-120dp"
+							android:background="@drawable/bg_main_curve"/>
+
+					<FrameLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerInParent="true">
+
+						<ImageView
+								android:id="@+id/iv_profile_image"
+								android:layout_width="100dp"
+								android:layout_height="100dp"
+								/>
+
+						<com.mikhaellopez.circularimageview.CircularImageView
+								android:layout_width="30dp"
+								android:layout_height="30dp"
+								android:src="@drawable/camera_retake"
+								android:layout_gravity="bottom|right" />
+					</FrameLayout>
+
+				</RelativeLayout>
+
+
+				<LinearLayout
+						android:paddingTop="@dimen/spacing_normal"
+						android:paddingBottom="@dimen/spacing_normal"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_small"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/account_circle" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_marginStart="3dp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="First Name"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<EditText
+									android:id="@+id/ed_first_name_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_regular"
+									android:text="Adam"
+									android:textSize="@dimen/font_normal"
+									android:textColor="@color/grey_80" />
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_small"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/account_circle" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_marginStart="3dp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="Last Name"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<EditText
+									android:id="@+id/ed_last_name_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_regular"
+									android:text="Gibson"
+									android:textSize="@dimen/font_normal"
+									android:textColor="@color/grey_80" />
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_small"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/email" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_marginStart="3dp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="Email"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<EditText
+									android:id="@+id/ed_email_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_regular"
+									android:text="adam@gmail.com"
+									android:inputType="textEmailAddress"
+									android:textSize="@dimen/font_normal"
+									android:textColor="@color/grey_80" />
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_normal"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/gender_male_female" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_marginStart="3dp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="Gender"
+									android:layout_marginBottom="@dimen/spacing_small"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<Spinner
+									android:id="@+id/sp_gender_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									/>
+
+							<View
+									android:layout_width="match_parent"
+									android:layout_height="1dp"
+									android:background="@color/color_icon" />
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_normal"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/flag" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_marginStart="3dp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="Nationality"
+									android:layout_marginBottom="@dimen/spacing_small"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<Spinner
+									android:id="@+id/sp_nationality_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									/>
+
+							<View
+									android:layout_width="match_parent"
+									android:layout_height="1dp"
+									android:background="@color/color_icon" />
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_small"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/home_circle" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_marginStart="3dp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="City of Residence"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<EditText
+									android:id="@+id/ed_city_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_regular"
+									android:text="London"
+									android:textSize="@dimen/font_normal"
+									android:textColor="@color/grey_80" />
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_small"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/account_card_details" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_marginStart="3dp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="Passport/ID number identification"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<EditText
+									android:id="@+id/ed_personal_id_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_regular"
+									android:text="131231231233"
+									android:inputType="number"
+									android:textSize="@dimen/font_normal"
+									android:textColor="@color/grey_80" />
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_small"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/translate" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_marginStart="3dp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="Langauge"
+									android:layout_marginBottom="@dimen/spacing_large"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<com.hootsuite.nachos.NachoTextView
+									android:id="@+id/tag_language_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									app:chipTextSize="@dimen/font_normal"
+									app:chipBackground="@color/colorPrimary"
+									app:chipTextColor="@color/white_dark">
+
+							</com.hootsuite.nachos.NachoTextView>
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="@dimen/spacing_normal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<com.google.android.material.textfield.TextInputLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:background="@drawable/txt_area_dark_yellow"
+								android:padding="@dimen/spacing_small"
+								android:textColorHint="@color/color_icon">
+
+							<androidx.appcompat.widget.AppCompatEditText
+									android:id="@+id/ed_resume_profile"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:background="@android:color/transparent"
+									android:gravity="top"
+									android:focusable="true"
+									android:focusableInTouchMode="true"
+									android:padding="@dimen/spacing_small"
+									style="@style/AppTheme.TextAppearance.EditText"
+									android:hint="About Your self"
+									android:inputType="textMultiLine"
+									android:maxLines="12"
+									android:minLines="7" />
+
+						</com.google.android.material.textfield.TextInputLayout>
+
+					</LinearLayout>
+
+
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center_vertical"
+							android:minHeight="50dp"
+							android:layout_marginBottom="@dimen/spacing_small"
+							android:orientation="horizontal"
+							android:paddingLeft="@dimen/spacing_large"
+							android:paddingRight="@dimen/spacing_large">
+
+						<ImageView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:background="@android:color/transparent"
+								android:tint="@color/grey_80"
+								app:srcCompat="@drawable/ballot" />
+
+						<View
+								android:layout_width="@dimen/spacing_smaller"
+								android:layout_height="wrap_content" />
+
+						<LinearLayout
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:orientation="vertical"
+								android:layout_weight="1">
+
+							<TextView
+									android:layout_marginStart="3dp"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:fontFamily="@font/raleway_semibold"
+									android:text="Personal Interest"
+									android:textSize="@dimen/font_small"
+									android:textColor="@color/grey_80" />
+
+							<com.adroitandroid.chipcloud.ChipCloud
+									chipcloud:layout_constraintTop_toBottomOf="@+id/tv_what"
+									android:layout_marginTop="@dimen/spacing_normal"
+									android:id="@+id/tag_interest_profile"
+									chipcloud:allCaps="false"
+									chipcloud:deselectedColor="@color/deselected_color"
+									chipcloud:deselectedFontColor="@color/deselected_font_color"
+									chipcloud:selectedColor="@color/selected_color"
+									chipcloud:selectedFontColor="@color/selected_font_color"
+									chipcloud:gravity="center"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									chipcloud:selectMode="multi"/>
+
+
+							<View
+									android:layout_width="match_parent"
+									android:layout_height="1dp"
+									android:background="@color/color_icon" />
+
+
+						</LinearLayout>
+
+
+
+					</LinearLayout>
+
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+		</androidx.core.widget.NestedScrollView>
+
+	</RelativeLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

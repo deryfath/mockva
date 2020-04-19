@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/parent_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/white">
+
+	<com.google.android.material.appbar.AppBarLayout
+			android:id="@+id/appbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.Toolbar
+				android:id="@+id/toolbar_booking_payment"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?attr/colorPrimary"
+				app:contentInsetStartWithNavigation="0dp"
+				android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+				app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+			<TextView
+					android:fontFamily="@font/raleway_semibold"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:textSize="@dimen/font_large"
+					android:text="Booking Payment"
+					android:textColor="@color/white"
+					/>
+
+		</androidx.appcompat.widget.Toolbar>
+
+
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.core.widget.NestedScrollView
+			android:background="@color/white_dark"
+			android:id="@+id/nested_scroll_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:clipToPadding="false"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<LinearLayout
+				android:paddingBottom="@dimen/spacing_larger"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+			<androidx.cardview.widget.CardView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					app:cardCornerRadius="2dp"
+					app:cardElevation="2dp"
+					android:layout_marginBottom="@dimen/spacing_tiny">
+
+				<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+
+					<RelativeLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_alignParentBottom="true"
+							android:layout_centerHorizontal="true"
+							android:background="#14454E"
+							android:orientation="vertical"
+							android:paddingLeft="@dimen/spacing_small"
+							android:paddingRight="@dimen/spacing_small"
+							android:paddingTop="@dimen/spacing_normal"
+							android:paddingBottom="@dimen/spacing_normal"
+							>
+
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:orientation="vertical">
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal">
+
+								<TextView
+										android:fontFamily="@font/raleway_semibold"
+										android:layout_weight="1"
+										android:id="@+id/title"
+										android:textStyle="bold"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="Batam Resort"
+										android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+										android:textColor="@android:color/white" />
+
+
+
+
+
+							</LinearLayout>
+
+
+
+
+							<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="@dimen/spacing_tiny"
+									android:gravity="center"
+									android:orientation="horizontal">
+
+
+									<ImageView
+											android:layout_marginEnd="@dimen/spacing_tiny"
+											android:layout_width="@dimen/spacing_large"
+											android:layout_height="@dimen/spacing_large"
+											android:tint="@color/white"
+											app:srcCompat="@drawable/ic_peoples" />
+
+									<TextView
+											android:fontFamily="@font/raleway_regular"
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:text="Booking Code"
+											android:textSize="@dimen/font_small"
+											android:textColor="@color/white" />
+
+							</LinearLayout>
+
+
+							<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal">
+
+								<TextView
+										android:layout_weight="1"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:textColor="@color/white"
+										android:text="091230912334234"
+										android:fontFamily="@font/raleway_semibold"
+										android:textSize="@dimen/font_large"/>
+
+
+								<LinearLayout
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_weight="0"
+										android:orientation="vertical">
+
+									<TextView
+											android:gravity="center_vertical"
+											android:textStyle="bold"
+											android:fontFamily="@font/raleway_semibold"
+											android:drawablePadding="@dimen/spacing_tiny"
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:text="Rp 450,000/person"
+											android:drawableLeft="@drawable/cash"
+											android:textSize="@dimen/font_small"
+											android:textColor="@android:color/white" />
+
+
+								</LinearLayout>
+
+							</LinearLayout>
+
+
+
+						</LinearLayout>
+
+						<LinearLayout
+								android:id="@+id/layout_dots"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_alignParentBottom="true"
+								android:layout_alignParentEnd="true"
+								android:layout_alignParentRight="true"
+								android:layout_gravity="end"
+								android:gravity="center"
+								android:orientation="horizontal" />
+
+
+					</RelativeLayout>
+
+				</RelativeLayout>
+
+			</androidx.cardview.widget.CardView>
+
+
+
+			<androidx.cardview.widget.CardView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					app:cardCornerRadius="2dp"
+					app:cardElevation="2dp">
+
+
+				<LinearLayout
+						android:padding="@dimen/spacing_smaller"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+
+
+					<LinearLayout
+							android:layout_marginTop="@dimen/spacing_normal"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal">
+
+						<TextView
+								android:layout_weight="1"
+								android:fontFamily="@font/raleway_semibold"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textSize="@dimen/font_small"
+								android:textColor="@color/color_icon"
+								android:text="Transaction Date"
+								android:layout_marginEnd="@dimen/spacing_small"
+								android:textStyle="bold"/>
+
+						<TextView
+								android:fontFamily="@font/raleway_regular"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textSize="@dimen/font_small"
+								android:textColor="@color/color_icon"
+								android:text="12 Agustus 2019"/>
+					</LinearLayout>
+
+
+						<TextView
+								android:layout_marginTop="@dimen/spacing_normal"
+								android:layout_weight="1"
+								android:fontFamily="@font/raleway_semibold"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="@dimen/spacing_tiny"
+								android:textSize="@dimen/font_small"
+								android:textColor="@color/color_icon"
+								android:text="Choose Payment Method"
+								android:layout_marginEnd="@dimen/spacing_small"
+								android:textStyle="bold"/>
+
+					<View
+							android:layout_marginBottom="10dp"
+							android:layout_width="match_parent"
+							android:layout_height="1dp"
+							android:alpha="0.2"
+							android:background="@color/color_icon"/>
+
+
+					<androidx.viewpager.widget.ViewPager
+							android:id="@+id/view_pager_payment"
+							android:layout_width="match_parent"
+							android:layout_height="200dp" />
+
+					<LinearLayout
+							android:id="@+id/layoutDots"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center"
+							android:minHeight="@dimen/spacing_normal"
+							android:orientation="horizontal" />
+
+
+					<TextView
+							style="@style/AppTheme.TextAppearance.Label"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="Card Number"
+							android:layout_marginStart="@dimen/spacing_tiny"
+							app:layout_constraintTop_toTopOf="parent"
+							app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+					<EditText
+							android:inputType="number"
+							android:maxLines="1"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="5dp"
+							style="@style/AppTheme.TextAppearance.EditText"/>
+
+					<View
+							android:layout_width="match_parent"
+							android:layout_height="0.5dp"
+							android:alpha="0.1"
+							android:layout_marginBottom="@dimen/spacing_small"
+							android:background="#000"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/layout_email_sign" />
+
+					<TextView
+							style="@style/AppTheme.TextAppearance.Label"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="Expired Date"
+							android:layout_marginStart="@dimen/spacing_tiny"
+							app:layout_constraintTop_toTopOf="parent"
+							app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+					<TextView
+							android:id="@+id/tv_expired_date"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="5dp"
+							style="@style/AppTheme.TextAppearance.EditText"/>
+
+					<View
+							android:id="@+id/view_divider_email"
+							android:layout_width="match_parent"
+							android:layout_height="0.5dp"
+							android:alpha="0.1"
+							android:background="#000"
+							android:layout_marginBottom="@dimen/spacing_normal"/>
+
+
+
+				</LinearLayout>
+
+			</androidx.cardview.widget.CardView>
+
+
+
+		</LinearLayout>
+
+	</androidx.core.widget.NestedScrollView>
+
+	<Button
+			android:id="@+id/btn_submit_payment"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorAccent"
+			android:layout_gravity="bottom"
+			android:text="SUBMIT"
+			android:fontFamily="@font/raleway_semibold"
+			android:textColor="@color/white"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

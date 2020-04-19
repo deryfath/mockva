@@ -1,0 +1,117 @@
+<resources>
+	<string name="app_name">mockva</string>
+	<string name="welcome">Welcome to</string>
+	<string name="plan_yor">Plan your next\nvacation with ease</string>
+	<string name="explore_the">Explore the world\nin an authentic way</string>
+	<string name="get_started">Get Started</string>
+
+	<string-array name="country_arrays">
+		<item>English</item>
+		<item>Bahasa</item>
+	</string-array>
+
+	<string-array name="gender">
+		<item>Male</item>
+		<item>Female</item>
+	</string-array>
+
+	<string-array name="currency">
+		<item>IDR</item>
+		<item>USD</item>
+	</string-array>
+
+	<string-array name="nationality">
+		<item>Indonesian</item>
+		<item>Other</item>
+	</string-array>
+
+	<string-array name="bank_account">
+		<item>Mandiri</item>
+		<item>BCA</item>
+		<item>BNI</item>
+		<item>BRI</item>
+		<item>BTN</item>
+	</string-array>
+
+	<string-array name="personal_interest">
+		<item>Photography</item>
+		<item>Adventure</item>
+		<item>Food</item>
+		<item>Hiking</item>
+		<item>Sightseeing</item>
+		<item>Culture</item>
+		<item>History</item>
+		<item>Performances</item>
+		<item>Shopping</item>
+		<item>Theme Parks</item>
+		<item>Diving</item>
+		<item>Islang-hopping</item>
+		<item>Water Sports</item>
+		<item>Cycling</item>
+		<item>Nightlife</item>
+		<item>Workshop</item>
+	</string-array>
+
+	<string-array name="month_array">
+		<item>January</item>
+		<item>February</item>
+		<item>March</item>
+		<item>April</item>
+		<item>May</item>
+		<item>June</item>
+		<item>July</item>
+		<item>August</item>
+		<item>September</item>
+		<item>October</item>
+		<item>November</item>
+		<item>December</item>
+	</string-array>
+
+
+	<string name="already_have_account">Already have an Xploriant account?</string>
+	<string name="by_using_xplorian">By using Xploriant, you agree to Xplorian\'s</string>
+	<string name="term_policy"><u>Terms of Policy</u></string>
+	<string name="sign_up">Sign Up</string>
+	<string name="login">Login</string>
+	<string name="forgot_password">Forgot password?</string>
+	<string name="dont_have">"Dont have xplorian account?  <b><u>SIGN UP</u></b> "</string>
+	<string name="sign_up_underline"><u>SIGN UP</u></string>
+	<string name="login_underline"><u>LOGIN</u></string>
+	<string name="email_address">Email</string>
+	<string name="password">Password</string>
+	<string name="login_google">Continue with Google</string>
+	<string name="submit">Submit</string>
+	<string name="reset_password">Reset Password</string>
+	<string name="enter_the_email">Enter the email address associated with your Xplorian account, and we will send you link to reset your password</string>
+	<string name="cancel">Cancel</string>
+	<string name="first_name">First Name</string>
+	<string name="last_name">Last Name</string>
+	<string name="confirm_password">Confirm Password</string>
+	<string name="next">Next</string>
+	<string name="gender">Gender</string>
+	<string name="nationality">Nationality</string>
+	<string name="city_residence">City of Residence</string>
+	<string name="birth_date">Birthday</string>
+	<string name="birthday_warn">*You must be 17 or older to sign up. Your birthday will not visible to other user</string>
+	<string name="personal_identification">Personal Identification</string>
+	<string name="personal_iden_warn">*Enter your passport or social security number. This information will not visible to other users.</string>
+	<string name="what_your_personal_interest">What are your personal interests?</string>
+	<string name="start_packing">Start packing your bags</string>
+	<string name="you_are_good_to">You are good to go!</string>
+	<string name="done">Done</string>
+	<string name="home">Home</string>
+	<string name="booking">Booking</string>
+	<string name="message">Message</string>
+	<string name="account">Account</string>
+	<string name="my_booking">My Booking</string>
+	<string name="travelers_booking">Travelers Booking</string>
+	<string name="pending_booking">Pending Booking</string>
+	<string name="accepted_booking">Accepted Booking</string>
+	<string name="rejected_booking">Rejected Booking</string>
+	<string name="paid_booking">Paid Booking</string>
+	<string name="finished_booking">Finished Booking</string>
+	<string name="canceled_booking">Canceled Booking</string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+
+</resources>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:chipcloud="http://schemas.android.com/tools"
+              android:background="@android:color/white"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bt_close"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_close" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Transfer Notifikasi"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white" />
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+			android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:padding="40dp"
+					android:gravity="center"
+					android:orientation="vertical">
+
+				<TextView
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="Account Source"
+						android:textSize="@dimen/font_small"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:id="@+id/tv_accountSource"
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="-"
+						android:layout_marginBottom="10dp"
+						android:textSize="12dp"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="Account Source Name"
+						android:textSize="@dimen/font_small"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:id="@+id/tv_accountSourceName"
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="-"
+						android:layout_marginBottom="10dp"
+						android:textSize="12dp"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="Account Destination"
+						android:textSize="@dimen/font_small"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:id="@+id/tv_accountDestination"
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="-"
+						android:layout_marginBottom="10dp"
+						android:textSize="18dp"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="Account Destination Name"
+						android:textSize="@dimen/font_small"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:id="@+id/tv_accountDestinationName"
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="-"
+						android:layout_marginBottom="10dp"
+						android:textSize="12dp"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="Amount"
+						android:textSize="@dimen/font_small"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:id="@+id/tv_amount"
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="-"
+						android:layout_marginBottom="10dp"
+						android:textSize="12dp"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="Reference Number"
+						android:textSize="@dimen/font_small"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:id="@+id/tv_reference"
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="-"
+						android:layout_marginBottom="10dp"
+						android:textSize="12dp"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="Transaction Timestamp"
+						android:textSize="@dimen/font_small"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:id="@+id/tv_transactionTimestamp"
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="-"
+						android:layout_marginBottom="10dp"
+						android:textSize="12dp"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="Status"
+						android:textSize="@dimen/font_small"
+						android:textColor="@color/grey_80" />
+
+				<TextView
+						android:id="@+id/tv_transactionStatus"
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="-"
+						android:layout_marginBottom="10dp"
+						android:textSize="12dp"
+						android:textColor="@color/grey_80" />
+
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

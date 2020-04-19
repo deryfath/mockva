@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				xmlns:app="http://schemas.android.com/apk/res-auto"
+				xmlns:card_view="http://schemas.android.com/tools">
+
+	<androidx.cardview.widget.CardView
+			android:layout_width="250dp"
+			android:layout_height="wrap_content"
+			app:cardCornerRadius="5dp"
+			app:cardUseCompatPadding="true"
+			app:cardPreventCornerOverlap="true"
+			app:cardElevation="2dp"
+			android:layout_margin="2dp"
+			android:foreground="?android:attr/selectableItemBackground"
+			card_view:cardBackgroundColor="@android:color/white"
+			card_view:cardElevation="2dp"
+			card_view:cardUseCompatPadding="true">
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="200dp">
+
+			<ImageView
+					android:id="@+id/iv_image_product"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:scaleType="centerCrop"
+					android:src="@drawable/image_12"
+					android:adjustViewBounds="true"
+					android:background="#A89E9E"/>
+
+			<TextView
+					android:fontFamily="@font/raleway_semibold"
+					android:layout_alignParentTop="true"
+					android:id="@+id/tv_destination_itinerary_guide"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:padding="5dp"
+					android:ellipsize="end"
+					android:text="Joasdasdni"
+					android:textColor="@color/amber_800"
+					/>
+
+
+			<LinearLayout
+					android:background="#68000000"
+					android:layout_alignParentBottom="true"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:padding="5dp"
+					android:orientation="vertical">
+
+
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="10dp"
+						android:gravity="center_vertical"
+						android:orientation="horizontal">
+
+					<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:orientation="vertical"
+							android:layout_weight="1">
+
+						<TextView
+								android:id="@+id/tv_price_itinerary_guide"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:textSize="12sp"
+								android:text="IDR 2.000.000"
+								android:fontFamily="@font/raleway_semibold"
+								android:textColor="@android:color/white"
+								/>
+
+					</LinearLayout>
+
+
+
+
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+	</androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
+

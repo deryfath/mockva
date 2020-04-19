@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		  xmlns:dist="http://schemas.android.com/apk/distribution"
+		  xmlns:tools="http://schemas.android.com/tools"
+		  package="com.project.daksatest">
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.CAMERA"/>
+
+	<dist:module dist:instant="true"/>
+
+	<application
+			android:name="com.project.daksatest.App"
+			android:allowBackup="true"
+			android:hardwareAccelerated="true"
+			android:icon="@mipmap/ic_launcher"
+			android:label="@string/app_name"
+			android:largeHeap="true"
+			android:roundIcon="@mipmap/ic_launcher_round"
+			android:supportsRtl="true"
+			android:theme="@style/AppTheme"
+			android:usesCleartextTraffic="true"
+			tools:ignore="GoogleAppIndexingWarning">
+		<activity android:name="com.project.daksatest.module.itinerary.itineraryCreator.ItineraryCreatorSingleDayActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.itinerary.itineraryCreator.ItineraryCreatorActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.itinerary.ondemand.OnDemandActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.account.ProfileGuideActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.wallet.TransferBalanceFinishActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.wallet.TransferBalanceActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.wallet.MyWalletActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.itinerary.MyItineraryActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.account.ProfileActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.payment.PaymentFinishActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.payment.PaymentActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.transfer.detail.BookingDetailActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.itinerary.ItineraryRequestFinishActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.itinerary.ItineraryRequestActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.itinerary.ItineraryActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.search.SearchActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.auth.login.LoginActivity">
+		</activity>
+		<activity android:name="com.project.daksatest.module.splash.SplashActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+				android:name="com.project.daksatest.module.MainActivity"
+				android:windowSoftInputMode="adjustPan">
+		</activity>
+
+		<!-- uCrop cropping activity -->
+		<activity
+				android:name="com.yalantis.ucrop.UCropActivity"
+				android:screenOrientation="portrait"
+				android:theme="@style/Theme.AppCompat.NoActionBar" />
+	</application>
+
+</manifest>

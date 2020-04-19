@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".module.itinerary.MyItineraryActivity">
+
+	<com.google.android.material.appbar.AppBarLayout
+			android:id="@+id/appbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.Toolbar
+				android:id="@+id/toolbar_my_itinerary"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?attr/colorPrimary"
+				app:contentInsetStartWithNavigation="0dp"
+				android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+				app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+				<TextView
+						android:layout_weight="1"
+						android:fontFamily="@font/raleway_semibold"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textStyle="bold"
+						android:textSize="@dimen/font_large"
+						android:text="My Itinerary"
+						android:textColor="@color/white"
+						/>
+
+				<ImageView
+						android:id="@+id/btn_add_my_itinerary"
+						android:layout_marginEnd="@dimen/spacing_normal"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/ic_add"/>
+
+			</LinearLayout>
+
+
+
+		</androidx.appcompat.widget.Toolbar>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.core.widget.NestedScrollView
+			android:background="@color/white_dark"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:clipToPadding="false"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/rv_my_itinerary"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				/>
+
+	</androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

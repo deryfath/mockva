@@ -1,0 +1,215 @@
+<ViewAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/flipper"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="40dp"
+				android:gravity="center"
+				android:orientation="vertical">
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:layout_marginBottom="@dimen/spacing_normal">
+
+				<TextView
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="Account Destination"
+						android:textSize="@dimen/font_small"
+						android:textColor="@color/grey_80" />
+
+				<EditText
+						android:id="@+id/ed_account_destination"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:background="@drawable/edit_text_background"
+						android:gravity="center_vertical"
+						android:textCursorDrawable="@drawable/custom_pointer"
+						android:inputType="number"
+						android:padding="10dp"
+						android:singleLine="true"
+						android:textColor="#000"
+						android:textSize="16sp"
+						android:layout_marginBottom="15dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:layout_marginBottom="@dimen/spacing_normal">
+
+				<TextView
+						android:layout_marginStart="3dp"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="Amount"
+						android:textSize="@dimen/font_small"
+						android:textColor="@color/grey_80" />
+
+				<EditText
+						android:id="@+id/ed_amount"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:background="@drawable/edit_text_background"
+						android:gravity="center_vertical"
+						android:textCursorDrawable="@drawable/custom_pointer"
+						android:inputType="number"
+						android:padding="10dp"
+						android:singleLine="true"
+						android:textColor="#000"
+						android:textSize="16sp"
+						android:layout_marginBottom="15dp"/>
+
+
+			</LinearLayout>
+
+
+			<Button
+					android:id="@+id/btn_transfer"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Transfer"
+					android:background="@android:color/holo_blue_dark"/>
+
+
+		</LinearLayout>
+
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="40dp"
+				android:gravity="center"
+				android:orientation="vertical">
+
+
+			<TextView
+					android:layout_marginStart="3dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/raleway_semibold"
+					android:text="Account Source"
+					android:textSize="@dimen/font_small"
+					android:textColor="@color/grey_80" />
+
+			<TextView
+					android:id="@+id/tv_accountSource"
+					android:layout_marginStart="3dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/raleway_semibold"
+					android:text="-"
+					android:layout_marginBottom="10dp"
+					android:textSize="18dp"
+					android:textColor="@color/grey_80" />
+
+			<TextView
+					android:layout_marginStart="3dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/raleway_semibold"
+					android:text="Account Source Name"
+					android:textSize="@dimen/font_small"
+					android:textColor="@color/grey_80" />
+
+			<TextView
+					android:id="@+id/tv_accountSourceName"
+					android:layout_marginStart="3dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/raleway_semibold"
+					android:text="-"
+					android:layout_marginBottom="10dp"
+					android:textSize="18dp"
+					android:textColor="@color/grey_80" />
+
+			<TextView
+					android:layout_marginStart="3dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/raleway_semibold"
+					android:text="Account Destination"
+					android:textSize="@dimen/font_small"
+					android:textColor="@color/grey_80" />
+
+			<TextView
+					android:id="@+id/tv_accountDestination"
+					android:layout_marginStart="3dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/raleway_semibold"
+					android:text="-"
+					android:layout_marginBottom="10dp"
+					android:textSize="18dp"
+					android:textColor="@color/grey_80" />
+
+			<TextView
+					android:layout_marginStart="3dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/raleway_semibold"
+					android:text="Account Destination Name"
+					android:textSize="@dimen/font_small"
+					android:textColor="@color/grey_80" />
+
+			<TextView
+					android:id="@+id/tv_accountDestinationName"
+					android:layout_marginStart="3dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/raleway_semibold"
+					android:text="-"
+					android:layout_marginBottom="10dp"
+					android:textSize="18dp"
+					android:textColor="@color/grey_80" />
+
+			<TextView
+					android:layout_marginStart="3dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/raleway_semibold"
+					android:text="Amount"
+					android:textSize="@dimen/font_small"
+					android:textColor="@color/grey_80" />
+
+			<TextView
+					android:id="@+id/tv_amount"
+					android:layout_marginStart="3dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/raleway_semibold"
+					android:text="-"
+					android:layout_marginBottom="40dp"
+					android:textSize="18dp"
+					android:textColor="@color/grey_80" />
+
+
+			<Button
+					android:id="@+id/btn_confirm"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Confirm"
+					android:background="@android:color/holo_blue_dark"/>
+
+
+
+		</LinearLayout>
+
+
+
+
+</ViewAnimator>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".module.itinerary.ondemand.OnDemandActivity">
+
+
+	<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:foreground="#9C2E76AF">
+
+		<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="centerCrop"
+				android:src="@drawable/bg_firstpage" />
+
+	</FrameLayout>
+
+
+	<LinearLayout
+			android:id="@+id/ll_top_intro"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:gravity="center">
+
+		<LinearLayout
+				android:id="@+id/ll_create_request_single_day"
+				android:layout_width="match_parent"
+				android:layout_height="150dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+			<ImageView
+					android:gravity="end"
+					android:layout_weight="0"
+					android:tint="@color/white"
+					android:layout_marginEnd="@dimen/spacing_tiny"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:src="@drawable/briefcase_plus"/>
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="On Demand\nItinerary"
+					android:textColor="@color/white"
+					android:textSize="@dimen/font_title"
+					android:fontFamily="@font/raleway_semibold"/>
+
+
+		</LinearLayout>
+
+
+
+		<LinearLayout
+				android:layout_marginTop="70dp"
+				android:gravity="center"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+			<ImageView
+					android:layout_marginEnd="10dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/map"/>
+
+			<TextView
+					android:textColor="@color/white"
+					android:fontFamily="@font/raleway_semibold"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Find the perfect\nvacation plan"/>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:layout_marginTop="30dp"
+				android:gravity="center"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+			<ImageView
+					android:layout_marginEnd="10dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/location"/>
+
+			<TextView
+					android:fontFamily="@font/raleway_semibold"
+					android:layout_width="wrap_content"
+					android:textColor="@color/white"
+					android:layout_height="wrap_content"
+					android:text="Travel on Budget"/>
+
+
+		</LinearLayout>
+
+		<Button
+				android:fontFamily="@font/raleway_semibold"
+				android:id="@+id/btn_create_request"
+				android:layout_marginTop="@dimen/spacing_larger"
+				android:layout_width="300dp"
+				android:background="@drawable/btn_confirm_background"
+				android:layout_height="wrap_content"
+				android:text="Create Request"
+				android:textColor="@color/white"/>
+
+		<RelativeLayout
+				android:layout_width="300dp"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true">
+
+			<TextView
+					android:fontFamily="@font/raleway_regular"
+					android:id="@+id/atau"
+					android:textColor="@color/white"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:text="or"/>
+
+			<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_centerVertical="true"
+					android:layout_toLeftOf="@id/atau"
+					android:background="@color/white"
+					/>
+
+			<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_centerVertical="true"
+					android:layout_toRightOf="@id/atau"
+					android:background="@color/white"
+					/>
+
+		</RelativeLayout>
+
+
+		<Button
+				android:fontFamily="@font/raleway_semibold"
+				android:id="@+id/btn_view_offer"
+				android:layout_width="300dp"
+				android:background="@drawable/btn_round_red_background"
+				android:textColor="@color/white"
+				android:layout_height="wrap_content"
+				android:text="View Offer"/>
+
+	</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

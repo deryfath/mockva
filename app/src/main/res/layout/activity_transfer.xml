@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".module.wallet.TransferBalanceActivity">
+
+	<com.google.android.material.appbar.AppBarLayout
+			android:id="@+id/appbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.Toolbar
+				android:id="@+id/toolbar_transfer_balance"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?attr/colorPrimary"
+				app:contentInsetStartWithNavigation="0dp"
+				android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+				app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+			<TextView
+					android:fontFamily="@font/raleway_semibold"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:textSize="@dimen/font_large"
+					android:text="Transfer Balance"
+					android:textColor="@color/white"
+					/>
+
+		</androidx.appcompat.widget.Toolbar>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.core.widget.NestedScrollView
+			android:background="@color/white_dark"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:clipToPadding="false"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="@dimen/spacing_normal">
+
+				<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Total"
+						android:fontFamily="@font/raleway_regular"/>
+
+				<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_semibold"
+						android:text="IDR 180.000"
+						android:textSize="@dimen/font_larger"
+						android:layout_marginBottom="@dimen/spacing_normal"
+						/>
+
+				<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/raleway_regular"
+						android:text="Bank Account"
+						android:layout_marginBottom="@dimen/spacing_small"/>
+				<Spinner
+						android:id="@+id/sp_account_bank"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+				</Spinner>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:alpha="0.3"
+					android:layout_marginBottom="@dimen/spacing_normal"
+					android:background="@color/color_icon" />
+
+			<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/raleway_regular"
+					android:text="Account Number"
+					android:layout_marginBottom="@dimen/spacing_small"/>
+
+			<EditText
+					android:inputType="number"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+
+			<Button
+					android:id="@+id/btn_transfer_balance"
+					android:layout_marginTop="@dimen/spacing_large"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Transfer"
+					android:textColor="@color/white"
+					android:background="@color/amber_800"
+					/>
+
+		</LinearLayout>
+
+	</androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

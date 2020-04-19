@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HomeMenuButton">
+        <attr name="menu_title" format="reference" />
+        <attr name="menu_icon" format="reference" />
+        <attr name="is_active" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="StickyScrollView">
+        <attr name="stuckShadowHeight" format="dimension"/>
+        <attr name="stuckShadowDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightScrollView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+</resources>

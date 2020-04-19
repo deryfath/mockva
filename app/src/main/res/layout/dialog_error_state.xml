@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/containerErrorState"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/spacing_huge"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginBottom="@dimen/spacing_huge"
+        android:background="@drawable/dialog_error_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_error_state"
+            android:id="@+id/icErrorState"
+            android:layout_margin="@dimen/spacing_normal"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icErrorState"
+            android:paddingRight="@dimen/spacing_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+</FrameLayout>
